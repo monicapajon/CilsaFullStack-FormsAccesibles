@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Datos Personales Accesible</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="form-container">
+      <h1>Formulario de Datos Personales Accesible</h1>
+      <form action="#" id="formulario">
+        <label id="nombreLabel" for="nombre">Nombre:</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="José"
+          aria-labelledby="nombreLabel"
+          required />
+
+        <label id="apellidoLabel" for="apellido">Apellido:</label>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Perez"
+          aria-labelledby="apellidoLabel"
+          required />
+
+        <label id="emailLabel" for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="PwB7v@example.com"
+          aria-labelledby="emailLabel"
+          required />
+
+        <label id="fechaNacimientoLabel" for="fechaNacimiento"
+          >Fecha de nacimiento:</label
+        >
+        <input
+          type="date"
+          id="fechaNacimiento"
+          name="fechaNacimiento"
+          aria-labelledby="fechaNacimientoLabel"
+          required />
+
+        <label id="paisResidenciaLabel" for="paisResidencia"
+          >País de residencia:</label
+        >
+        <select
+          id="paisResidencia"
+          name="paisResidencia"
+          aria-labelledby="paisResidenciaLabel"
+          required
+          aria-live="polite"
+          aria-describedby="paisResidenciaInfo">
+          <!--Agregar el atributo aria-live="polite" al select indica a los lectores de pantalla que el contenido del elemento puede cambiar dinámicamente y que deben actualizar la información que presentan al usuario. El atributo aria-describedby debe referenciar un elemento HTML que contenga la información adicional.-->
+            
+          <option value="">Seleccione un país. Desplázate con la flecha abajo.</option>
+            
+          <option value="Argentina">Argentina</option>
+            
+          <option value="Brasil">Brasil</option>
+            
+          <option value="Chile">Chile</option>
+            
+          <option value="Colombia">Colombia</option>
+            
+          <option value="Ecuador">Ecuador</option>
+            
+          <option value="Paraguay">Paraguay</option>
+            
+          <option value="Perú">Perú</option>
+            
+          <option value="Uruguay">Uruguay</option>
+            
+          <option value="Venezuela">Venezuela</option>
+        </select>
+        <div class="button-one">
+          <button
+            type="submit"
+            id="enviar-btn"
+            aria-label="Enviar el formulario">
+            Enviar
+          </button>
+        </div>
+      </form>
+      <div class="buttons">
+        <button id="estilo-uno-btn" aria-label="Activar Estilo Uno">
+          Estilo Uno
+        </button>
+        <button
+          id="alto-contraste-btn"
+          aria-label="Activar Estilo de Alto Contraste">
+          Estilo de Alto Contraste
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
