@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Datos Personales Accesible</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- estilo personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="form-container">
+    <h1 class="text-center">Formulario de Datos Personales Accesible</h1>
+    <form action="#" id="formulario">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="José" required>
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido:</label>
+        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Perez" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="PwB7v@example.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="fechaNacimiento" class="form-label">Fecha de nacimiento:</label>
+        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+      </div>
+      <div class="mb-3">
+        <label for="paisResidencia" class="form-label">País de residencia:</label>
+        <select class="form-select" id="paisResidencia" name="paisResidencia" required>
+          <option value="">Selecciona un país...</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Perú">Perú</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <button type="submit" class="btn btn-primary" id="enviar-btn">Enviar</button>
+      </div>
+    </form>
+    <div class="buttons">
+      <button id="estilo-uno-btn" class="btn btn-secondary">Estilo Uno</button>
+      <button id="alto-contraste-btn" class="btn btn-secondary">Estilo de Alto Contraste</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and your custom script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
